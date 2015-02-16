@@ -24,10 +24,10 @@ makeCacheMatrix <- function(x = matrix()) {
         ## get = returns the matrix
         get <- function() x
         
-        ## setinv = set the inverse
+        ## setinv = set the cached inverse
         setinv <- function(inv) i <<- inv
         
-        ## getinv = returns the inverse
+        ## getinv = returns the cached inverse
         getinv <- function() i
         list(set = set, get = get,
              setinv = setinv,
